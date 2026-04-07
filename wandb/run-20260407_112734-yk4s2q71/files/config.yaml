@@ -1,0 +1,105 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            8inrefgg1po9u4go5r8eh91jqfblka07:
+                codePath: Lab3_Pers1.ipynb
+                colab: https://colab.research.google.com/notebook#fileId=1GN8ZL_Og5KLa3r2UkC0DGe9Hqq6MkPnU
+                cpu_count: 1
+                cpu_count_logical: 2
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "120942624768"
+                        used: "46824734720"
+                email: megnachristian4@gmail.com
+                executable: /usr/bin/python3
+                git:
+                    commit: 03384b7a39e6b4ae6be3cf6017b6699810dfee03
+                    remote: https://github.com/chrimegna/faimdl-lab3.git
+                gpu: Tesla T4
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Turing
+                      cudaCores: 2560
+                      memoryTotal: "16106127360"
+                      name: Tesla T4
+                      uuid: GPU-cbe21219-34d8-5a25-ab1b-c347a567addf
+                host: 907e49f552ca
+                memory:
+                    total: "13605834752"
+                os: Linux-6.6.113+-x86_64-with-glibc2.35
+                program: Lab3_Pers1.ipynb
+                python: CPython 3.12.13
+                root: /content/faimdl-lab3
+                startedAt: "2026-04-07T11:27:34.527802Z"
+                writerId: 8inrefgg1po9u4go5r8eh91jqfblka07
+        m: []
+        python_version: 3.12.13
+        t:
+            "1":
+                - 1
+                - 41
+                - 105
+            "2":
+                - 1
+                - 41
+                - 105
+            "3":
+                - 2
+                - 16
+            "4": 3.12.13
+            "5": 0.25.1
+            "8":
+                - 1
+                - 12
+            "12": 0.25.1
+            "13": linux-x86_64
+Architecture:
+    value: |-
+        Model1(
+          (layer1): Sequential(
+            (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU()
+          )
+          (layer2): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU()
+            (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+          )
+          (layer3): Sequential(
+            (0): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU()
+          )
+          (layer4): Sequential(
+            (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU()
+            (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+          )
+          (layer5): Sequential(
+            (0): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU()
+          )
+          (layer6): Sequential(
+            (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU()
+            (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+          )
+          (layer7): Sequential(
+            (0): Flatten(start_dim=1, end_dim=-1)
+            (1): Dropout(p=0.4, inplace=False)
+            (2): Linear(in_features=16384, out_features=200, bias=True)
+          )
+        )
+Batch size:
+    value: 128
+Epochs:
+    value: 10
+Learning rate:
+    value: 0.005
